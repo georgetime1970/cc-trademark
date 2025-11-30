@@ -1,0 +1,412 @@
+[
+  {
+    "id": "img1",
+    "name": "图形",
+    "src": "/src/assets/trademark/img1/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "78207362",
+    "dedicatedPeriod": {
+      "start": "2024-10-07",
+      "end": "2034-10-06"
+    },
+    "effectiveGroup": ["2001", "2004", "2005", "2013"],
+    "services": [
+      { "group": "2001", "items": ["床垫", "家具", "办公家具", "床", "沙发", "凳子", "弹簧床垫"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2005", "items": ["草编制品（不包括鞋、帽、席、垫）"] },
+      { "group": "2013", "items": ["软垫"] }
+    ],
+    "tags": { "isRare": true, "isHot": false, "isSell": false }
+  },
+  {
+    "id": "img2",
+    "name": "图形",
+    "src": "/src/assets/trademark/img2/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "57534852",
+    "dedicatedPeriod": {
+      "start": "2022-02-07",
+      "end": "2032-02-06"
+    },
+    "effectiveGroup": ["2001", "2004", "2005", "2013"],
+    "services": [
+      { "group": "2001", "items": ["床垫", "家具", "办公家具", "床", "沙发", "凳子", "弹簧床垫"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2005", "items": ["草编制品（不包括鞋、帽、席、垫）"] },
+      { "group": "2013", "items": ["软垫"] }
+    ],
+    "tags": { "isRare": true, "isHot": false, "isSell": false }
+  },
+  {
+    "id": "chwch",
+    "name": "CHWCH",
+    "src": "/src/assets/trademark/chwch/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "78192161",
+    "dedicatedPeriod": {
+      "start": "2024-10-14",
+      "end": "2034-10-13"
+    },
+    "effectiveGroup": ["2001", "2004", "2005", "2013"],
+    "services": [
+      { "group": "2001", "items": ["床垫", "家具", "办公家具", "床", "沙发", "凳子", "弹簧床垫"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2005", "items": ["草编制品（不包括鞋、帽、席、垫）"] },
+      { "group": "2013", "items": ["软垫"] }
+    ],
+    "tags": { "isRare": true, "isHot": false, "isSell": false }
+  },
+  {
+    "id": "gunjunchangcheng",
+    "name": "冠军长城",
+    "src": "/src/assets/trademark/gunjunchangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "65720110",
+    "dedicatedPeriod": {
+      "start": "2023-01-07",
+      "end": "2033-01-06"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": true, "isHot": false, "isSell": false }
+  },
+  {
+    "id": "jichouchangcheng",
+    "name": "己丑长城",
+    "src": "/src/assets/trademark/jichouchangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64914102",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "guimaochangcheng",
+    "name": "癸卯长城",
+    "src": "/src/assets/trademark/guimaochangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64921425",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "gengshenchangcheng",
+    "name": "庚申长城",
+    "src": "/src/assets/trademark/gengshenchangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64931912",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "dinghaichangcheng",
+    "name": "丁亥长城",
+    "src": "/src/assets/trademark/dinghaichangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64929244",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "jiachenchangcheng",
+    "name": "甲辰长城",
+    "src": "/src/assets/trademark/jiachenchangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64923258",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "xinweichangcheng",
+    "name": "辛未长城",
+    "src": "/src/assets/trademark/xinweichangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64919922",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "renzichangcheng",
+    "name": "壬子长城",
+    "src": "/src/assets/trademark/renzichangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64934980",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "yisichangcheng",
+    "name": "乙巳长城",
+    "src": "/src/assets/trademark/yisichangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "64934245",
+    "dedicatedPeriod": {
+      "start": "2023-02-14",
+      "end": "2033-02-13"
+    },
+    "effectiveGroup": ["2001", "2002", "2006", "2007", "2010", "2011", "2012", "2013"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫"] },
+      { "group": "2002", "items": ["塑料包装容器"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["床用垫褥（床用织品除外）"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "changchengkongqi",
+    "name": "长城空气",
+    "src": "/src/assets/trademark/changchengkongqi/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "62824230",
+    "dedicatedPeriod": {
+      "start": "2022-08-14",
+      "end": "2032-08-13"
+    },
+    "effectiveGroup": ["2001", "2006", "2007", "2010", "2011", "2012"],
+    "services": [
+      { "group": "2001", "items": ["家具", "床垫", "乳胶床垫", "弹簧床垫"] },
+      { "group": "2006", "items": ["木、蜡、石膏或塑料制艺术品", "漆器工艺品"] },
+      { "group": "2007", "items": ["木制或塑料制招牌"] },
+      { "group": "2010", "items": ["非金属制身份鉴别手环"] },
+      { "group": "2011", "items": ["棺材"] },
+      { "group": "2012", "items": ["家具用非金属附件"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "bingwuchangcheng",
+    "name": "丙戊长城",
+    "src": "/src/assets/trademark/bingwuchangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "59012957",
+    "dedicatedPeriod": {
+      "start": "2022-03-14",
+      "end": "2032-03-13"
+    },
+    "effectiveGroup": ["2001", "2004", "2005", "2012"],
+    "services": [
+      { "group": "2001", "items": ["弹簧床垫", "家具", "沙发", "床", "床垫", "办公家具", "凳子"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2005", "items": ["草编制品（不包括鞋、帽、席、垫）"] },
+      { "group": "2012", "items": ["家具用非金属附件"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "bingxuchangcheng",
+    "name": "丙戌长城",
+    "src": "/src/assets/trademark/bingxuchangcheng/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "56499143",
+    "dedicatedPeriod": {
+      "start": "2021-12-21",
+      "end": "2031-12-20"
+    },
+    "effectiveGroup": ["2001", "2002", "2004", "2006", "2012", "2013", "2014"],
+    "services": [
+      { "group": "2001", "items": ["沙发", "床", "办公家具", "家具"] },
+      { "group": "2002", "items": ["非金属、非砖石容器（贮液或贮气用）"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2006", "items": ["漆器工艺品"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["枕头"] },
+      { "group": "2014", "items": ["门用非金属附件"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "changchengjiangjunyanban",
+    "name": "长城将军岩板",
+    "src": "/src/assets/trademark/changchengjiangjunyanban/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "61182564",
+    "dedicatedPeriod": {
+      "start": "2022-06-07",
+      "end": "2032-06-06"
+    },
+    "effectiveGroup": ["2003", "2005", "2007", "2008", "2009", "2010", "2011"],
+    "services": [
+      { "group": "2001", "items": ["床", "沙发", "家具", "办公家具"] },
+      { "group": "2002", "items": ["非金属、非砖石容器（贮液或贮气用）"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2006", "items": ["漆器工艺品"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["枕头"] },
+      { "group": "2014", "items": ["门用非金属附件"] }
+    ],
+    "tags": { "isRare": false, "isHot": true, "isSell": false }
+  },
+  {
+    "id": "feiwengan",
+    "name": "长城非温感",
+    "src": "/src/assets/trademark/changchengjiangjunyanban/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "61182564",
+    "dedicatedPeriod": {
+      "start": "2022-06-07",
+      "end": "2032-06-06"
+    },
+    "effectiveGroup": ["2003", "2005", "2007", "2008", "2009", "2010", "2011"],
+    "services": [
+      { "group": "2001", "items": ["床", "沙发", "家具", "办公家具"] },
+      { "group": "2002", "items": ["非金属、非砖石容器（贮液或贮气用）"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2006", "items": ["漆器工艺品"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["枕头"] },
+      { "group": "2014", "items": ["门用非金属附件"] }
+    ],
+    "tags": { "isRare": false, "isHot": false, "isSell": true }
+  },
+  {
+    "id": "quanwu",
+    "name": "长城全屋",
+    "src": "/src/assets/trademark/changchengjiangjunyanban/1.png",
+    "kind": 20,
+    "kindName": "家具",
+    "registrationNumber": "61182564",
+    "dedicatedPeriod": {
+      "start": "2022-06-07",
+      "end": "2032-06-06"
+    },
+    "effectiveGroup": ["2003", "2005", "2007", "2008", "2009", "2010", "2011"],
+    "services": [
+      { "group": "2001", "items": ["床", "沙发", "家具", "办公家具"] },
+      { "group": "2002", "items": ["非金属、非砖石容器（贮液或贮气用）"] },
+      { "group": "2004", "items": ["镜子（玻璃镜）"] },
+      { "group": "2006", "items": ["漆器工艺品"] },
+      { "group": "2012", "items": ["家具用非金属附件"] },
+      { "group": "2013", "items": ["枕头"] },
+      { "group": "2014", "items": ["门用非金属附件"] }
+    ],
+    "tags": { "isRare": false, "isHot": false, "isSell": true }
+  }
+]

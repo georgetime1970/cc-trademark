@@ -1,0 +1,13 @@
+<template>
+
+  <svg fill="none" width="1500" viewBox="0 0 1440 526" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <linearGradient id="wave-blue" gradientUnits="userSpaceOnUse" x1="903.523" x2="903.523" y1="89.4001" y2="525.537">
+      <stop offset="0" stop-color="#176ab1" />
+      <stop offset="1" stop-color="#cbd8f1" />
+    </linearGradient>
+    <path
+      d="m-231 266.537c268.0459-296.0003 492.5-278.293 642-254.7926 149.5 23.5003 388 190.6566 698 155.1566s929.05 358.636 929.05 358.636h-2269.05z"
+      fill="url(#wave-blue)" />
+  </svg>
+</template>

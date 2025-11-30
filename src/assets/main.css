@@ -1,0 +1,26 @@
+@import "./base.css";
+
+@media (hover: hover) {
+}
+
+/* 大于768px屏幕 */
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  #app header {
+    width: 768px;
+  }
+  #app footer {
+    width: 768px;
+  }
+}
+
+/* 根容器 */
+#app {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}

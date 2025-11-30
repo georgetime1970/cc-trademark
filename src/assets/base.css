@@ -1,0 +1,222 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  /* 背景色 */
+  --background: rgb(243, 244, 245);
+  /* --background-soft: var(--vt-c-white-soft); */
+  /* --background-mute: var(--vt-c-white-mute); */
+  --background-white: #fff;
+  /* 背景淡白色渐变 */
+  --background-gradient: linear-gradient(#fff, #fefefe);
+  /* 主色 */
+  --main: #ef234c;
+  --main-transparent: #ef234c88;
+
+  /* 主色渐变 */
+  --linear-gradient: linear-gradient(#ef234c, #fb4849, #e82539, #ef234c);
+
+  /* 文字颜色 */
+  --text-white: #fff;
+  --text-white-soft: #f8f8f8;
+  --text-white-mute: #f2f2f2;
+  --text-black: #000;
+  --text-soft: #243a63;
+  --text-mute: rgba(39, 48, 54, 0.6);
+
+  /* 字体大小 */
+  --font-size-smallmin: 0.625rem;
+  --font-size-small: 0.75rem;
+  --font-size-smallmax: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-normalmax: 1.125rem;
+  --font-size-big: 1.25rem;
+
+  /* font-size: 3.7333vw; */
+  /* 圆角大小 */
+  --border-radius: 1rem;
+
+  /* 阴影 */
+  --box-shadow: 0.1rem 0.1rem 0.1rem rgba(39, 48, 54, 0.05);
+
+  /* 其他 */
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+/* 黑暗模式 */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  -webkit-tap-highlight-color: transparent; /*不再出现蓝色/灰色的点击高亮*/
+  -webkit-touch-callout: none; /*去掉 iOS 点击灰色遮罩*/
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-soft);
+}
+
+button {
+  border: 0;
+  background-color: var(--background-white);
+}
+html {
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: #fff; */
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+
+/* 果冻动画 */
+/* animation: jello-horizontal 0.9s both; */
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* 商标徽章动态动画 */
+/* animation: up 3s ease-in forwards infinite; */
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+/* 卡片翻转效果 */
+/* animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+@keyframes flip-in-ver-right {
+  0% {
+    transform: rotateY(-80deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+/* hot火苗效果 */
+/* animation: rise 2s infinite; */
+@keyframes rise {
+  0% {
+    transform: translateY(0) scaleY(1) rotate(0deg);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(-4px) scaleY(1.06) rotate(-1.5deg);
+    opacity: 0.98;
+  }
+
+  60% {
+    transform: translateY(-2px) scaleY(0.99) rotate(1deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* 从小放大 */
+/* animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
