@@ -34,9 +34,9 @@ const posterUrl = ref('') // 海报base64数据
 const tags = ref('') // 徽章图片
 // 根据徽章设置相应图片
 if (userInfo.tags.isRare) {
-  tags.value = '/src/assets/img/rare.svg'
+  tags.value = '/img/rare.svg'
 } else if (userInfo.tags.isHot) {
-  tags.value = '/src/assets/img/good.svg'
+  tags.value = '/img/good.svg'
 }
 
 
@@ -161,7 +161,7 @@ onMounted(() => {
 <template>
 
   <!-- 点击按钮触发生成 -->
-  <button @click="generate" class="generate-btn">海报分享<img src="/src/assets/img/share.svg" alt=""></button>
+  <button @click="generate" class="generate-btn">海报分享<img src="/img/share.svg" alt=""></button>
   <!-- 弹出层 -->
   <div class="poster" v-if="visible" @click="visible = false">
     <img :src="posterUrl" class="poster-img" @load="onImgLoad" />
@@ -169,7 +169,7 @@ onMounted(() => {
   </div>
   <!-- 隐藏的真实模板（重点！） -->
   <div class="content" ref="posterNode">
-    <div class="bg"><img src="/src/assets/img/postrBackground.svg" /></div>
+    <div class="bg"><img src="/img/postrBackground.svg" /></div>
     <div class="img-box">
       <div class="img"><img :src="userInfo.src" /></div>
       <div class="name">

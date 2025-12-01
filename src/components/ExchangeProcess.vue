@@ -11,11 +11,11 @@
       <div class="left"><span>个人</span></div>
       <div class="right">
         <div class="right-text">
-          <img src="/src/assets/img/true.png" alt="">
+          <img src="/img/true.png" alt="">
           <span>身份证正反两面复印件</span>
         </div>
         <div class="right-text">
-          <img src="/src/assets/img/true.png" alt="">
+          <img src="/img/true.png" alt="">
           <span>个体户营业执照</span>
         </div>
       </div>
@@ -25,7 +25,7 @@
       <div class="left"><span>企业</span></div>
       <div class="right">
         <div class="right-text">
-          <img src="/src/assets/img/true.png" alt="">
+          <img src="/img/true.png" alt="">
           <span>企业营业执照</span>
         </div>
       </div>
@@ -35,7 +35,7 @@
       <div class="left"><span>过户后</span></div>
       <div class="right">
         <div class="right-text">
-          <img src="/src/assets/img/true.png" alt="">
+          <img src="/img/true.png" alt="">
           <span>核准转让证明</span>
         </div>
       </div>
@@ -46,28 +46,28 @@
   <div class="container">
     <div class="title">转让流程</div>
     <div class="flex">
-      <div class="flex-left"> <img src="/src/assets/img/exchange/1.png" alt=""></div>
+      <div class="flex-left"> <img src="/img/exchange/1.png" alt=""></div>
       <div class="flex-right">
         <h3>挑选中意商标</h3>
         <span>客户确认商标价格和法定状态</span>
       </div>
     </div>
     <div class="flex">
-      <div class="flex-left"> <img src="/src/assets/img/exchange/2.png" alt=""></div>
+      <div class="flex-left"> <img src="/img/exchange/2.png" alt=""></div>
       <div class="flex-right">
         <h3>支付定金</h3>
         <span>支付定金并签订转让协议书</span>
       </div>
     </div>
     <div class="flex">
-      <div class="flex-left"> <img src="/src/assets/img/exchange/4.png" alt=""></div>
+      <div class="flex-left"> <img src="/img/exchange/4.png" alt=""></div>
       <div class="flex-right">
         <h3>提交相关资料</h3>
         <span>向国家商标局递送买家资料</span>
       </div>
     </div>
     <div class="flex">
-      <div class="flex-left"> <img src="/src/assets/img/exchange/4.png" alt=""></div>
+      <div class="flex-left"> <img src="/img/exchange/4.png" alt=""></div>
       <div class="flex-right">
         <h3>过户完成</h3>
         <span>等待国家商标局下发文件</span>

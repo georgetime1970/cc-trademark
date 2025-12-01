@@ -21,7 +21,7 @@ import BlueSvg from './waves/BlueSvg.vue';
 
     <div class="content">
       <span>家具类长城系列珍稀商标</span>
-      <img src="@/assets/img/cc.png" alt="">
+      <img src="/img/cc.png" alt="">
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 {
   "威远王氏": {
-    "src": "src/assets/trademark/1.jpg",
+    "src": "/trademark/1.jpg",
     "kind": 5,
     "kindName": "医药",
     "registrationNumber": "72409287",
@@ -17,7 +17,7 @@
     ]
   },
   "银桦半岛": {
-    "src": "src/assets/trademark/2.jpg",
+    "src": "/trademark/2.jpg",
     "kind": 35,
     "kindName": "广告销售",
     "registrationNumber": "61580373",

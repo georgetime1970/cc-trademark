@@ -21,6 +21,6 @@
   letter-spacing: 1px;
   color: var(--text-white);
   /* background-color: var(--main); */
-  background: url('@/assets/img/headBackground.svg');
+  background: url('/img/headBackground.svg');
 }
 </style>

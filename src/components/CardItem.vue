@@ -1,13 +1,14 @@
 <!-- 商标卡片 -->
 <script setup lang="ts">
 import trademarkDataJson from "@/data/trademark.json"
-import { ref } from "vue";
+import { ref, toRefs } from "vue";
 import { useRouter } from "vue-router";
 
 // 用于控制是否显示已售卖商标的状态量
-const { noSell } = withDefaults(defineProps<{ noSell?: boolean }>(), {
+const props = withDefaults(defineProps<{ noSell?: boolean }>(), {
   noSell: false
 })
+const { noSell } = toRefs(props)
 
 // 跳转路由
 const router = useRouter()
@@ -17,7 +18,7 @@ const goInfo = (key: string) => {
 
 // 如果不显示已售商标,这里进行过滤
 const trademarkData = ref()
-if (noSell) {
+if (noSell.value) {
   trademarkData.value = trademarkDataJson.filter((el) => el.tags.isSell === false)
 }
 else {
@@ -85,7 +86,7 @@ else {
       right: 0;
       width: 50px;
       height: 50px;
-      background: url('src/assets/img/rare.svg');
+      background: url('/img/rare.svg');
       background-size: contain;
       background-position: 0 -10px;
       background-repeat: no-repeat;
@@ -100,7 +101,7 @@ else {
       right: 5px;
       width: 20px;
       height: 20px;
-      background: url('src/assets/img/hot.svg');
+      background: url('/img/hot.svg');
       background-size: contain;
       background-repeat: no-repeat;
       animation: rise 2s infinite;
@@ -116,7 +117,7 @@ else {
       height: 100%;
       /* background-color: #8888; */
       backdrop-filter: blur(3px);
-      background-image: url('src/assets/img/sell.svg');
+      background-image: url('/img/sell.svg');
       background-size: 80px;
       background-position: center;
       border-radius: 10px;

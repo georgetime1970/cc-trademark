@@ -6,10 +6,10 @@
   <div class="container">
     <!-- 商标介绍 商标使用 -->
     <router-link class="item" to="/consult">
-      <img src="@/assets/img/icon-introduce.png" alt="">商标介绍
+      <img src="/img/icon-introduce.png" alt="">商标介绍
     </router-link>
     <router-link class="item" to="/consult">
-      <img src="@/assets/img/icon-use.png" alt="">商标使用
+      <img src="/img/icon-use.png" alt="">商标使用
     </router-link>
   </div>
 </template>

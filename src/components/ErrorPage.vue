@@ -1,12 +1,16 @@
 <script setup lang="ts">
-const { msg } = withDefaults(defineProps<{ msg?: string }>(), {
+import { toRefs } from 'vue';
+
+const props = withDefaults(defineProps<{ msg?: string }>(), {
   msg: '页面不存在'
 })
+
+const { msg } = toRefs(props)
 </script>
 
 <template>
   <div class="container">
-    <img class="error-img" src="/src/assets/img/404.svg" alt="">
+    <img class="error-img" src="/img/404.svg" alt="">
     <h1>{{ msg }}</h1>
   </div>
 </template>

@@ -2,7 +2,7 @@
   {
     "id": "img1",
     "name": "图形",
-    "src": "/src/assets/trademark/img1/1.png",
+    "src": "/trademark/img1/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "78207362",
@@ -24,7 +24,7 @@
   {
     "id": "img2",
     "name": "图形",
-    "src": "/src/assets/trademark/img2/1.png",
+    "src": "/trademark/img2/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "57534852",
@@ -46,7 +46,7 @@
   {
     "id": "chwch",
     "name": "CHWCH",
-    "src": "/src/assets/trademark/chwch/1.png",
+    "src": "/trademark/chwch/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "78192161",
@@ -68,7 +68,7 @@
   {
     "id": "gunjunchangcheng",
     "name": "冠军长城",
-    "src": "/src/assets/trademark/gunjunchangcheng/1.png",
+    "src": "/trademark/gunjunchangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "65720110",
@@ -94,7 +94,7 @@
   {
     "id": "jichouchangcheng",
     "name": "己丑长城",
-    "src": "/src/assets/trademark/jichouchangcheng/1.png",
+    "src": "/trademark/jichouchangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64914102",
@@ -120,7 +120,7 @@
   {
     "id": "guimaochangcheng",
     "name": "癸卯长城",
-    "src": "/src/assets/trademark/guimaochangcheng/1.png",
+    "src": "/trademark/guimaochangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64921425",
@@ -146,7 +146,7 @@
   {
     "id": "gengshenchangcheng",
     "name": "庚申长城",
-    "src": "/src/assets/trademark/gengshenchangcheng/1.png",
+    "src": "/trademark/gengshenchangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64931912",
@@ -172,7 +172,7 @@
   {
     "id": "dinghaichangcheng",
     "name": "丁亥长城",
-    "src": "/src/assets/trademark/dinghaichangcheng/1.png",
+    "src": "/trademark/dinghaichangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64929244",
@@ -198,7 +198,7 @@
   {
     "id": "jiachenchangcheng",
     "name": "甲辰长城",
-    "src": "/src/assets/trademark/jiachenchangcheng/1.png",
+    "src": "/trademark/jiachenchangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64923258",
@@ -224,7 +224,7 @@
   {
     "id": "xinweichangcheng",
     "name": "辛未长城",
-    "src": "/src/assets/trademark/xinweichangcheng/1.png",
+    "src": "/trademark/xinweichangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64919922",
@@ -250,7 +250,7 @@
   {
     "id": "renzichangcheng",
     "name": "壬子长城",
-    "src": "/src/assets/trademark/renzichangcheng/1.png",
+    "src": "/trademark/renzichangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64934980",
@@ -276,7 +276,7 @@
   {
     "id": "yisichangcheng",
     "name": "乙巳长城",
-    "src": "/src/assets/trademark/yisichangcheng/1.png",
+    "src": "/trademark/yisichangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64934245",
@@ -302,7 +302,7 @@
   {
     "id": "changchengkongqi",
     "name": "长城空气",
-    "src": "/src/assets/trademark/changchengkongqi/1.png",
+    "src": "/trademark/changchengkongqi/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "62824230",
@@ -326,7 +326,7 @@
   {
     "id": "bingwuchangcheng",
     "name": "丙戊长城",
-    "src": "/src/assets/trademark/bingwuchangcheng/1.png",
+    "src": "/trademark/bingwuchangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "59012957",
@@ -348,7 +348,7 @@
   {
     "id": "bingxuchangcheng",
     "name": "丙戌长城",
-    "src": "/src/assets/trademark/bingxuchangcheng/1.png",
+    "src": "/trademark/bingxuchangcheng/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "56499143",
@@ -373,7 +373,7 @@
   {
     "id": "changchengjiangjunyanban",
     "name": "长城将军岩板",
-    "src": "/src/assets/trademark/changchengjiangjunyanban/1.png",
+    "src": "/trademark/changchengjiangjunyanban/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "61182564",
@@ -398,7 +398,7 @@
   {
     "id": "feiwengan",
     "name": "长城非温感",
-    "src": "/src/assets/trademark/changchengjiangjunyanban/1.png",
+    "src": "/trademark/changchengjiangjunyanban/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "61182564",
@@ -423,7 +423,7 @@
   {
     "id": "quanwu",
     "name": "长城全屋",
-    "src": "/src/assets/trademark/changchengjiangjunyanban/1.png",
+    "src": "/trademark/changchengjiangjunyanban/1.png",
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "61182564",

@@ -33,9 +33,9 @@ const makeNotice = () => {
   const op = ref(opList[Math.floor(Math.random() * opList.length)])
   // 根据性别设置头像
   if (gender.value === '女士') {
-    src.value = '/src/assets/img/female.svg'
+    src.value = '/img/female.svg'
   } else {
-    src.value = '/src/assets/img/male.svg'
+    src.value = '/img/male.svg'
   }
   // 设置随机时间,大于60不再增加
   time.value = Math.floor(Math.random() * 15) + time.value
