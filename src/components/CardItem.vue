@@ -1,13 +1,30 @@
 <!-- 商标卡片 -->
 <script setup lang="ts">
-import trademarkData from "@/data/trademark.json"
+import trademarkDataJson from "@/data/trademark.json"
+import { ref } from "vue";
 import { useRouter } from "vue-router";
+
+// 用于控制是否显示已售卖商标的状态量
+const { noSell } = withDefaults(defineProps<{ noSell?: boolean }>(), {
+  noSell: false
+})
 
 // 跳转路由
 const router = useRouter()
 const goInfo = (key: string) => {
   router.push({ name: "TrademarkInfo", params: { id: key } })
-} 
+}
+
+// 如果不显示已售商标,这里进行过滤
+const trademarkData = ref()
+if (noSell) {
+  trademarkData.value = trademarkDataJson.filter((el) => el.tags.isSell === false)
+}
+else {
+  trademarkData.value = trademarkDataJson
+}
+
+
 </script>
 
 <template>
@@ -25,7 +42,6 @@ const goInfo = (key: string) => {
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

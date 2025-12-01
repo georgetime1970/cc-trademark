@@ -6,6 +6,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "78207362",
+    "price": "8.9",
+    "NumberOfPeople": "105",
     "dedicatedPeriod": {
       "start": "2024-10-07",
       "end": "2034-10-06"
@@ -26,6 +28,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "57534852",
+    "price": "8.8",
+    "NumberOfPeople": "78",
     "dedicatedPeriod": {
       "start": "2022-02-07",
       "end": "2032-02-06"
@@ -46,6 +50,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "78192161",
+    "price": "6.9",
+    "NumberOfPeople": "62",
     "dedicatedPeriod": {
       "start": "2024-10-14",
       "end": "2034-10-13"
@@ -66,6 +72,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "65720110",
+    "price": "8.9",
+    "NumberOfPeople": "156",
     "dedicatedPeriod": {
       "start": "2023-01-07",
       "end": "2033-01-06"
@@ -90,6 +98,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64914102",
+    "price": "3.6",
+    "NumberOfPeople": "45",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -114,6 +124,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64921425",
+    "price": "3.8",
+    "NumberOfPeople": "46",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -138,6 +150,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64931912",
+    "price": "3.8",
+    "NumberOfPeople": "78",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -162,6 +176,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64929244",
+    "price": "3.8",
+    "NumberOfPeople": "56",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -186,6 +202,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64923258",
+    "price": "3.8",
+    "NumberOfPeople": "89",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -210,6 +228,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64919922",
+    "price": "3.8",
+    "NumberOfPeople": "66",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -234,6 +254,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64934980",
+    "price": "3.8",
+    "NumberOfPeople": "69",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -258,6 +280,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "64934245",
+    "price": "3.8",
+    "NumberOfPeople": "95",
     "dedicatedPeriod": {
       "start": "2023-02-14",
       "end": "2033-02-13"
@@ -282,6 +306,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "62824230",
+    "price": "2.9",
+    "NumberOfPeople": "142",
     "dedicatedPeriod": {
       "start": "2022-08-14",
       "end": "2032-08-13"
@@ -304,6 +330,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "59012957",
+    "price": "3.9",
+    "NumberOfPeople": "69",
     "dedicatedPeriod": {
       "start": "2022-03-14",
       "end": "2032-03-13"
@@ -324,6 +352,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "56499143",
+    "price": "3.9",
+    "NumberOfPeople": "77",
     "dedicatedPeriod": {
       "start": "2021-12-21",
       "end": "2031-12-20"
@@ -347,6 +377,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "61182564",
+    "price": "2.6",
+    "NumberOfPeople": "85",
     "dedicatedPeriod": {
       "start": "2022-06-07",
       "end": "2032-06-06"
@@ -370,6 +402,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "61182564",
+    "price": "1.8",
+    "NumberOfPeople": "12",
     "dedicatedPeriod": {
       "start": "2022-06-07",
       "end": "2032-06-06"
@@ -393,6 +427,8 @@
     "kind": 20,
     "kindName": "家具",
     "registrationNumber": "61182564",
+    "price": "1.8",
+    "NumberOfPeople": "12",
     "dedicatedPeriod": {
       "start": "2022-06-07",
       "end": "2032-06-06"

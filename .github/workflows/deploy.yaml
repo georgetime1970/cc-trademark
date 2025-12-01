@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages # 工作流名称
+
+# 触发条件（on:）,这里的触发条件是当push时就执行工作流
+on:
+  push:
+    branches:
+      - main # 当推送到 main 分支时触发,main 或 master，根据你的主分支名来写
+  workflow_dispatch: # 允许手动触发
+
+permissions: # 权限
+  contents: write
+
+# 任务定义（jobs:）,相当于任务合集
+jobs:
+  deploy: # jobs的名称
+    runs-on: ubuntu-latest # 运行环境：Linux（可选 windows-latest/macOS-latest）
+    steps: # 步骤
+      - name: Checkout code # 步骤名称
+        uses: actions/checkout@v5 # 官方动作：拉取代码到虚拟机
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      # 部署到GitHub上
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # publish_branch: gh-pages # default: gh-pages 设置要用作 GitHub Pages 分支的分支名称。默认值为 gh-pages。
+          publish_dir: ./dist
+          cname: cc.jiangyahan.com # 如果没有自定义域名去掉这一行

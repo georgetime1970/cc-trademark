@@ -1,12 +1,14 @@
-export type Root = Root2[];
+export type ITrademarkList = ITrademark[];
 
-export interface Root2 {
+export interface ITrademark {
   id: string;
   name: string;
   src: string;
   kind: number;
   kindName: string;
   registrationNumber: string;
+  price: string;
+  NumberOfPeople: string;
   dedicatedPeriod: DedicatedPeriod;
   effectiveGroup: string[];
   services: Service[];
@@ -25,6 +27,6 @@ export interface Service {
 
 export interface Tags {
   isRare: boolean;
-  IsHot: boolean;
+  isHot: boolean;
   isSell: boolean;
 }

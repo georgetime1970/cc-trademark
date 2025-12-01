@@ -1,20 +1,32 @@
 <script setup lang="ts">
 import { onMounted, ref, useTemplateRef } from 'vue'
+// @ts-expect-error 暂无官方声明包
 import domtoimage from 'dom-to-image-more'
+// @ts-expect-error 暂无官方声明包
 import QRCode from 'qrcode'
 
-const { userInfo } = defineProps({
+// 定义数据接口
+interface Props {
   userInfo: {
-    type: Object,
-    required: true,
-    // default: () => ({
-    //   avatar: 'https://thirdwx.qlogo.cn/...', // 可能跨域
-    //   nickname: 'Grok大魔王',
-    //   code: 'XAI666',
-    //   qrcode: 'https://yourdomain.com/qr/123.png' // 可能跨域
-    // })
+    src: string;
+    kind: number;
+    kindName: string;
+    services: {
+      group: string;
+      items: string[];
+    }[];
+    tags: {
+      isRare: boolean;
+      isHot: boolean;
+      isSell: boolean;
+    }
   }
-})
+}
+
+
+
+const { userInfo } = defineProps<Props>() // 获取数据
+
 
 const posterNode = useTemplateRef('posterNode') // 获取posterNode节点
 const visible = ref(false) // 海报图片是否可见
@@ -64,11 +76,11 @@ if (userInfo.tags.isRare) {
 // }
 //#endregion
 
+/**
+ * 图片带圆角方法
+ */
 const generate = async () => {
-  console.log(1231231)
-
   if (!posterNode.value) return
-
   try {
     // 1. 先用 domtoimage 生成一个方形的图片（不加任何 border-radius）
     const dataUrl = await domtoimage.toPng(posterNode.value, {
@@ -95,7 +107,7 @@ const generate = async () => {
     })
 
     // 3. 用 canvas 画圆角
-    const cornerRadius = 40  // 2倍图下 20px → 40px，你可以自行调整
+    const cornerRadius = 16  // 2倍图下 20px → 40px，你可以自行调整
     const canvas = document.createElement('canvas')
     canvas.width = img.width
     canvas.height = img.height
@@ -288,12 +300,18 @@ onMounted(() => {
       gap: 10px;
 
       span {
-        padding: 0 5px;
+        padding: 2px 5px;
         color: #ff5548;
         background: #ffedef;
         border-radius: .3125rem;
         font-weight: bold;
         font-size: var(--font-size-smallmax);
+        display: inline-block;
+        /* 关键：变成可设置宽高的元素 */
+        height: 1.875rem;
+        /* 你想要的总高度 */
+        line-height: 1.875rem;
+        /* 和 height 完全相等 */
       }
 
 

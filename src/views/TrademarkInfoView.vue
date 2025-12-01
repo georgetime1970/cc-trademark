@@ -2,30 +2,30 @@
 import trademarkData from "@/data/trademark.json"
 import PosterImg from "@/components/PosterImg.vue"
 import ExchangeProcess from "@/components/ExchangeProcess.vue"
-import { onMounted, ref } from "vue"
-// 获取路由参数
-const data = defineProps(['id'])
-// 寻找符合条件的对象
-const item = trademarkData.find((el) => {
-  return el.id === data.id
-}
-)
+import CardItem from "@/components/CardItem.vue"
+import ErrorPage from "@/components/ErrorPage.vue"
+import { onMounted, ref, watch, watchEffect } from "vue"
+import type { ITrademark } from "@/data/type/trademark.json"
 
-const tags = ref('') // 设置徽章等级
-if (item) {
-  if (item.tags.isRare) {
-    tags.value = '稀有'
-  } else if (item.tags.isHot) {
-    tags.value = '精品'
+
+const props = defineProps<{ id: string }>()
+
+// 根据路由参数寻找符合条件的对象数据
+const item = ref<ITrademark>()
+const gettrademarkData = (key: string) => {
+  item.value = trademarkData.find((el) => {
+    return el.id === key
   }
+  )
 }
+
 // 动态数据列表
-const lastNameList = ['王', '刘', '张', '赵', '孙', '李', '周', '蒋', '陈', '杨', '黄', '吴',]
+const lastNameList = ['王', '刘', '张', '赵', '孙', '李', '周', '蒋', '陈', '杨', '黄', '吴', '杜', '翁', '潘', '卢', '彭', '郭', '何', '万']
 const genderList = ['女士', '先生', '先生']
-const opList = ['浏览', '浏览', '分享', '分享', '咨询']
-const notice = ref()
-const src = ref()
-const time = ref(1)
+const opList = ['浏览', '浏览', '浏览', '分享', '分享', '咨询']
+const notice = ref()  // 组合的操作描述
+const src = ref() // 头像资源
+const time = ref(1) // 发生操作的时间
 // 组合对象
 const makeNotice = () => {
   const lastname = ref(lastNameList[Math.floor(Math.random() * lastNameList.length)])
@@ -45,8 +45,18 @@ const makeNotice = () => {
   notice.value = { lastname, gender, op, src, time }
 }
 
-// 先执行一次
-makeNotice()
+
+watch(
+  // () => route.params.id,
+  props,
+  (newId, oldId) => {
+    console.log('参数变化了：', oldId, '→', newId)
+    time.value = 1  // 重置动态的时间
+    makeNotice()  // 产生随机动态数据
+    gettrademarkData(newId.id)  // 根据路由参数重新获取数据
+  },
+  { immediate: true } // 页面首次进入也执行一次
+)
 // 间隔3s执行
 onMounted(
   () => {
@@ -56,14 +66,44 @@ onMounted(
   }
 )
 
-// 传给海报组件的数据
-const myInfo = {
-  src: item?.src,
-  kind: item?.kind,
-  kindName: item?.kindName,
-  services: item?.services,
-  tags: item?.tags
+// 定义发送给海报组件的数据接口
+interface myInfo {
+  src: string;
+  kind: number;
+  kindName: string;
+  services: {
+    group: string;
+    items: string[];
+  }[];
+  tags: {
+    isRare: boolean;
+    isHot: boolean;
+    isSell: boolean;
+  }
 }
+// 根据变化来调整数据的实时性
+const tags = ref('') // 设置徽章等级
+const myInfo = ref<myInfo>({} as myInfo);
+watchEffect(() => {
+  if (item.value) {
+    if (item.value.tags.isRare) {
+      tags.value = '稀有'
+    } else if (item.value.tags.isHot) {
+      tags.value = '精品'
+    }
+    // 传给海报组件的数据
+    myInfo.value = {
+      src: item.value.src,
+      kind: item.value.kind,
+      kindName: item.value.kindName,
+      services: item.value.services,
+      tags: item.value.tags
+    }
+  }
+})
+
+
+
 </script>
 
 <template>
@@ -99,10 +139,10 @@ const myInfo = {
         <div class="top">
           <div class="money">
             <span>¥</span>
-            <span>1.49</span>
+            <span>{{ item.price }}</span>
             <span>万</span>
           </div>
-          <span>12人想要</span>
+          <span>{{ item.NumberOfPeople }}人咨询</span>
         </div>
         <h1>{{ item.name }}</h1>
         <div class="content kind">
@@ -157,13 +197,18 @@ const myInfo = {
         </div>
       </div>
     </div>
-
+    <!-- 商标交易流程 -->
     <ExchangeProcess />
+
+
   </div>
   <div v-else>
-    <h1>页面不存在</h1>
+    <ErrorPage msg="资源不存在" />
   </div>
 
+  <!-- 商标卡片 这里传递noSell参数,不显示已经售卖的商标-->
+  <div class="more">更多推荐</div>
+  <CardItem :noSell=true></CardItem>
 </template>
 
 <style scoped>
@@ -360,5 +405,12 @@ const myInfo = {
 
     }
   }
+}
+
+.more {
+
+  color: #2447af;
+  font-weight: bold;
+  margin: 5px 20px
 }
 </style>
