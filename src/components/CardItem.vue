@@ -1,14 +1,16 @@
 <!-- 商标卡片 -->
 <script setup lang="ts">
+import LazyImage from "./tool/LazyImage.vue";
 import trademarkDataJson from "@/data/trademark.json"
-import { ref, toRefs } from "vue";
+import { computed } from "vue";
 import { useRouter } from "vue-router";
 
 // 用于控制是否显示已售卖商标的状态量
-const props = withDefaults(defineProps<{ noSell?: boolean }>(), {
+const porps = withDefaults(defineProps<{ noSell?: boolean }>(), {
   noSell: false
 })
-const { noSell } = toRefs(props)
+
+
 
 // 跳转路由
 const router = useRouter()
@@ -16,26 +18,25 @@ const goInfo = (key: string) => {
   router.push({ name: "TrademarkInfo", params: { id: key } })
 }
 
-// 如果不显示已售商标,这里进行过滤
-const trademarkData = ref()
-if (noSell.value) {
-  trademarkData.value = trademarkDataJson.filter((el) => el.tags.isSell === false)
-}
-else {
-  trademarkData.value = trademarkDataJson
-}
-
+const trademarkData = computed(() => {
+  if (porps.noSell) {
+    return trademarkDataJson.filter(el => el.tags.isSell === false)
+  }
+  return trademarkDataJson
+})
 
 </script>
 
 <template>
 
   <!-- 图片 名称 20 家具类 基本信息 效果展示 使用循环展示 数据使用本地json-->
+  <!-- 增加使用懒加载组件 -->
   <div class="container">
     <div class="item" v-for="item in trademarkData" :key="item.id">
       <div class="card" :class="{ 'rare-badge': item.tags.isRare, 'hot': item.tags.isHot, 'sell': item.tags.isSell }">
-        <div class="img" @click="goInfo(item.id)"><img :src=item.src alt=""></div>
-        <h1>{{ item.name }}</h1> <!-- 商标名称-->
+        <!-- <div class="img" @click="goInfo(item.id)"><img :src=item.src alt=""></div> -->
+        <LazyImage :src=item.src alt="" class="img" @click="goInfo(item.id)" />
+        <h1>{{ item.name }}</h1>
         <span>{{ item.kind }}类&nbsp;{{ item.kindName }}&nbsp;{{ item.registrationNumber }}</span>
         <div class="bottom">
           <button class="info" @click="goInfo(item.id)">基本信息</button>

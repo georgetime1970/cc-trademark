@@ -6,7 +6,8 @@ import CardItem from "@/components/CardItem.vue"
 import ErrorPage from "@/components/ErrorPage.vue"
 import { onMounted, ref, watch, watchEffect } from "vue"
 import type { ITrademark } from "@/data/type/trademark.json"
-
+import femaleImg from '@/assets/image/female.svg'
+import maleImg from '@/assets/image/male.svg'
 
 const props = defineProps<{ id: string }>()
 
@@ -33,9 +34,9 @@ const makeNotice = () => {
   const op = ref(opList[Math.floor(Math.random() * opList.length)])
   // 根据性别设置头像
   if (gender.value === '女士') {
-    src.value = '/img/female.svg'
+    src.value = femaleImg
   } else {
-    src.value = '/img/male.svg'
+    src.value = maleImg
   }
   // 设置随机时间,大于60不再增加
   time.value = Math.floor(Math.random() * 15) + time.value

@@ -5,7 +5,7 @@
 <template>
   <div class="container">
     咨询
-    <img src="/img/logo.svg" alt="">
+    <img src="@/assets/image/logo.svg" alt="">
   </div>
 </template>
 
